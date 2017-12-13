@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Missile command</title>
+    </head>
+    <body onload="main();">
+        <canvas style="position:absolute" id="viewport" width="512" height="512">
+            Canvas not supported
+        </canvas>
+        <div id="score" style="position:absolute;width: 512px; margin-top: 10px;margin-left: 10px; color:#FFF"></div>
+        <div id="textbox" style="position:absolute;text-align: center;width: 512px; margin-top: 200px; color:#FFF"></div>
+        <div id="scoreTextbox" style="position:absolute;text-align: center;width: 512px; margin-top: 250px; color:#FFF"></div>
+        <script type="text/javascript" src="extern/gl-matrix-min.js"></script>
+        <script type="text/javascript" src="src/rasterize.js"></script>
+        <script type="text/javascript" src="src/shaders/simple_vertex.js"></script>
+        <script type="text/javascript" src="src/shaders/simple_fragment.js"></script>
+        <script type="text/javascript" src="src/shaders/noise_vertex.js"></script>
+        <script type="text/javascript" src="src/shaders/noise_fragment.js"></script>
+        <script type="text/javascript" src="src/shader-manager.js"></script>
+        <script type="text/javascript" src="src/city.js"></script>
+        <script type="text/javascript" src="src/battery.js"></script>
+        <script type="text/javascript" src="src/terrain.js"></script>
+        <script type="text/javascript" src="src/missile.js"></script>
+        <script type="text/javascript" src="src/explosion.js"></script>
+        <script type="text/javascript" src="src/missile-command.js"></script>
+    </body>
+</html>
